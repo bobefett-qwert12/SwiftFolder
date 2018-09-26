@@ -1,7 +1,5 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
-
 var hello = "Hello, playground"
 print("Hello, world!")
 
@@ -29,16 +27,20 @@ let appleCount = "I have \(apples) apples."
 let fruitCount = "I have \(apples + peaches) fruits."
 //another way to combine ints and strings
 
-var x = 3
-print(x+4)
-
-
-if (3==3)
-{
-    print("welcome")
+func greet(_ person: String, on day: String) -> String {
+    return "Hello \(person), today is \(day)."
 }
-while(aNumber>=3)
-{
-    print("urmum")
-    aNumber = aNumber - 1
+
+print(greet("Bob", on: "Wednesday"))
+
+func map (number: Int) -> Int {
+    let result = 3*number
+    if((result+1)%2 == 0){
+        return result
+    }else{
+        return 0
+    }
 }
+
+map(number: 18)
+map(number: 27)
