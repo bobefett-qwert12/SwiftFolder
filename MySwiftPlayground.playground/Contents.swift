@@ -42,5 +42,5 @@ func map (number: Int) -> Int {
     }
 }
 
-map(number: 18)
-map(number: 27)
+print(map(number: 18))
+print(map(number: 27))
